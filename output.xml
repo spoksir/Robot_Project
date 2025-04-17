@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.9 on win32)" generated="2025-04-17T22:42:14.645186" rpa="false" schemaversion="5">
+<suite id="s1" name="First-Test-Case" source="C:\Projetos\Robot_Website_pessoal\first-test-case.robot">
+<test id="s1-t1" name="Open website" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-17T22:42:15.287939" level="INFO">Opening browser 'Chrome' to base url 'https://www.francisco-vieira.pt'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-17T22:42:15.286943" elapsed="3.361321"/>
+</kw>
+<status status="PASS" start="2025-04-17T22:42:15.284950" elapsed="3.364682"/>
+</test>
+<test id="s1-t2" name="Teste link LinkedIn" line="12">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(@href, "linkedin")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-17T22:42:18.659462" elapsed="0.473404"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-04-17T22:42:19.134390" level="INFO">Clicking link 'xpath=//a[contains(@href, "linkedin")]'.</msg>
+<arg>xpath=//a[contains(@href, "linkedin")]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-17T22:42:19.133870" elapsed="3.984008"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>linkedin.com</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-04-17T22:42:23.118393" elapsed="0.016016"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2025-04-17T22:42:23.135429" elapsed="0.197521"/>
+</kw>
+<status status="PASS" start="2025-04-17T22:42:18.657908" elapsed="4.677043"/>
+</test>
+<test id="s1-t3" name="Teste link GitHub" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-17T22:42:23.349094" level="INFO">Opening browser 'Chrome' to base url 'https://www.francisco-vieira.pt'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-17T22:42:23.348584" elapsed="2.784434"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=//a[contains(@href, "github")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-17T22:42:26.134019" elapsed="0.912080"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-04-17T22:42:27.048097" level="INFO">Clicking link 'xpath=//a[contains(@href, "github.com")]'.</msg>
+<arg>xpath=//a[contains(@href, "github.com")]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-17T22:42:27.047103" elapsed="2.097788"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>github.com</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-04-17T22:42:29.146398" elapsed="0.063384"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2025-04-17T22:42:29.211145" elapsed="0.301644"/>
+</kw>
+<status status="PASS" start="2025-04-17T22:42:23.346546" elapsed="6.167247"/>
+</test>
+<test id="s1-t4" name="Abrir o projecto &quot;Barbearia Vanguarda&quot;" line="26">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-04-17T22:42:29.517788" level="INFO">Opening browser 'Chrome' to base url 'https://www.francisco-vieira.pt'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-17T22:42:29.516789" elapsed="3.658114"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=(//video[@alt="Barbearia Vanguarda"])[1]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-17T22:42:33.175905" elapsed="0.654486"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=(//video[@alt="Barbearia Vanguarda"])[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-04-17T22:42:33.831393" elapsed="0.482648"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-04-17T22:42:34.316048" level="INFO">Simulating Mouse Over on element 'xpath=(//video[@alt="Barbearia Vanguarda"])[1]'.</msg>
+<arg>xpath=(//video[@alt="Barbearia Vanguarda"])[1]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-04-17T22:42:34.315057" elapsed="0.409434"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[@href="https://www.barbearia-vanguarda.pt"]//p[normalize-space()="More Info"]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-17T22:42:34.725487" elapsed="0.071181"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-17T22:42:34.797666" level="INFO">Clicking element 'xpath=//a[@href="https://www.barbearia-vanguarda.pt"]//p[normalize-space()="More Info"]'.</msg>
+<arg>xpath=//a[@href="https://www.barbearia-vanguarda.pt"]//p[normalize-space()="More Info"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-17T22:42:34.796668" elapsed="0.474101"/>
+</kw>
+<status status="PASS" start="2025-04-17T22:42:29.515787" elapsed="5.755981"/>
+</test>
+<status status="PASS" start="2025-04-17T22:42:14.649196" elapsed="20.625648"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="First-Test-Case" id="s1" pass="4" fail="0" skip="0">First-Test-Case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
